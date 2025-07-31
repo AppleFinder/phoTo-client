@@ -350,15 +350,8 @@ export default function PoseRecommendationPage() {
                 <Camera className="w-5 h-5 mr-2" />
                 포즈 추천 받기
               </AnimatedButton>
-            ) : (
-              <div className="fixed bottom-24 left-1/2 transform -translate-x-1/2 z-40">
-                <Link href="/pose_recommendation/edit">
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full shadow-lg">
-                    선택한 포즈로 촬영하기
-                  </Button>
-                </Link>
-              </div>
-            )}
+            ) : null }
+      
 
             {/* Selected Settings Summary (only in settings view) */}
             {!showResults && (selectedComposition || selectedMood) && (
