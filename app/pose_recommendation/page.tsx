@@ -351,7 +351,7 @@ export default function PoseRecommendationPage() {
                 포즈 추천 받기
               </AnimatedButton>
             ) : null }
-      
+  
 
             {/* Selected Settings Summary (only in settings view) */}
             {!showResults && (selectedComposition || selectedMood) && (
